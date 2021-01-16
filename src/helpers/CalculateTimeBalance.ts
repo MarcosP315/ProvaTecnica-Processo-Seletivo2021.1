@@ -11,8 +11,12 @@ const calculateTimeBalance = (timeMachine:TimeMachine)=>{
 
     /**
      * CALC
+     * feito
      */
-    
+    balance.year = timeMachine.targetDate.year - timeMachine.currentDate.year
+    balance.month = timeMachine.targetDate.month - timeMachine.currentDate.month
+    balance.day = timeMachine.targetDate.day - timeMachine.currentDate.day
+
     return balance;
 }
 

@@ -5,9 +5,11 @@ import calculateTimeBalance from "./CalculateTimeBalance";
 const calculateSpaceTime = (timeMachine:TimeMachine) => {
     /**
      * CALC
+     * feito
      */
-
-    return 0;
+    let timeBalance = calculateTimeBalance(timeMachine)
+    
+    return Math.sqrt(timeBalance.year**2 + timeBalance.month**2 + timeBalance.day**2);
 }
 
 export default calculateSpaceTime;

@@ -7,9 +7,13 @@ const synchronizePulsars = (timeMachine:TimeMachine) => {
     
     /**
      * CALC
+     * feito
      */
-    
-    return 0;
+    let spaceTime = calculateSpaceTime(timeMachine)
+     
+    return Math.sqrt(timeMachine.currentPosition.x**2 +
+         timeMachine.currentPosition.y**2 +
+         (timeMachine.currentPosition.z**2/spaceTime));
 }
 
 export default synchronizePulsars;
